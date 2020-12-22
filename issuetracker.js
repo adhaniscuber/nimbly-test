@@ -1,4 +1,4 @@
-/* 
+/*
   Issue Tracker List Script
   Objective: Process the issue list based on priority and tag matches
   Time Limit: 45 minutes
@@ -13,12 +13,12 @@
   Note 2: const and let are ES6 variable declarations (they are identical to var for the purposes of this exercise)
   Note 3: Feel free to mutate objects (add, modify, and/or remove properties) to get to the objective
   IMPORTANT: In order to make this test fair for all candidates, please DO NOT POST IT TO ANY FORUM (e.g. StackOverflow)
-  
+
 */
 
 // DO NOT CHANGE THESE
 const DATETIME_NOW = new Date(2019, 4, 24);
-const issues = [
+let issues = [
   {
     title: 'Straws need to be environmentally-friendly',
     createdBy: 'Bernice',
@@ -122,6 +122,8 @@ const issues = [
 
 function getFilteredList() {
   // Write your code here
+  issues = issues.filter(issue => issue.completedBy === null)
+
 
   return issues;
 }
@@ -130,7 +132,10 @@ function getSortedList() {
   const filteredList = getFilteredList();
   // Write your code here
 
-  return filteredList;
+  const sortDate = filteredList.sort((dateA, dateB) => dateA.createdAt > dateB.createdAt ? -1 : 1)
+  const sortByFilter = sortDate.sort((a, b) => b.tags.includes('highpriority') ? 1 : -1 )
+
+  return sortByFilter;
 }
 
 function printList() {
