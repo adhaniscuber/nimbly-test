@@ -133,7 +133,7 @@ function getSortedList() {
   // Write your code here
 
   const sortDate = filteredList.sort((dateA, dateB) => dateA.dueAt > dateB.dueAt ? -1 : 1)
-  const sortByFilter = sortDate.sort((a, b) => a.tags.includes('highpriority') ? -1 : 1 )
+  const sortByFilter = sortDate.sort((a, b) => b.tags.includes('highpriority') ? 1 : -1 )
 
   return sortByFilter;
 }
