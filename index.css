@@ -1,0 +1,214 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+
+/* CSS foundations */
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  line-height: 1;
+  color: var(--color-dark);  
+  font-family: 'Noto Sans', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: scroll;    
+}
+
+iframe {
+  border: 0;
+}
+
+main {
+  display: block;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+li {
+  display: block;
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+dd {
+  margin-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: inherit;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+sup {
+  position: relative;
+  top: -.5em;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+  overflow: visible;
+}
+
+button:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+hr {
+  border: 0.5px solid #E6E6E6;
+  margin-bottom: 2.5%;
+}
+
+input,
+textarea {
+  font-family: 'Noto Sans', 'sans-serif';
+  font-weight: 300;
+  border: 1px solid #cccccc;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+}
+
+.title {
+  margin-top: 2%;
+  text-align: center;
+  font-size: 2em;
+}
+
+.description {
+  margin-top: 2%;  
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.loading {
+  margin-top: 2%;
+  text-align: center;  
+}
+
+.loading .spinner {
+  margin: 0 auto;  
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  border-top: 5px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  /* Write code below */
+}
+
+@keyframes spin {
+
+}
+
+.frame {
+  height: 600px;
+  margin-top: 2%;
+  background-color: white;
+  border: 5px solid black;
+  /* Write code below */
+}
+
+.photo {
+  width: 400px;
+  /* Write code below */
+}
+
+.magazine {
+  margin-top: 2%;
+}
+
+.magazine-left {
+  width: 50%;
+  padding: 1em 2%;
+  background-color: orange;
+  text-align: justify;
+  float: left;
+  /* Write code below */
+}
+
+.magazine-right {
+  width: 50%;
+  padding: 1em 2%;
+  background-color: greenyellow;
+  text-align: justify;
+  float: right;
+  /* Write code below */
+}
